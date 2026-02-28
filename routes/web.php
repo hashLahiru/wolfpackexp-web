@@ -37,3 +37,7 @@ Route::get('/tour-details', function () {
 Route::get('/blog-details', function () {
     return view('web.blog-detials');
 })->name('blog.details');
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
