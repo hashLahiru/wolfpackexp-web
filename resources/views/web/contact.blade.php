@@ -57,9 +57,9 @@
                                 <i class="bi bi-headset"></i>
                             </div>
                             <div class="info-content">
-                                <h4>Hours of Operation</h4>
-                                <p>Sunday-Fri: 9 AM - 6 PM</p>
-                                <p>Saturday: 9 AM - 4 PM</p>
+                                <h4>Call / WhatsApp</h4>
+                                <p><i class="bi bi-telephone"></i> +94 77 123 4567</p>
+                                <p><i class="bi bi-whatsapp"></i> +94 77 123 4567</p>
                             </div>
                         </div>
                     </div>
@@ -67,16 +67,8 @@
 
             </div>
 
-            <!-- Google Maps (Full Width) -->
-            <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
             <!-- Contact Form Section (Overlapping) -->
-            <div class="container form-container-overlap">
+            <div class="container">
                 <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="col-lg-10">
                         <div class="contact-form-wrapper">
@@ -84,12 +76,23 @@
 
                             <form action="forms/contact.php" method="post" class="php-email-form">
                                 <div class="row g-3">
+
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <div class="input-with-icon">
                                                 <i class="bi bi-person"></i>
-                                                <input type="text" class="form-control" name="name"
-                                                    placeholder="First Name" required="">
+                                                <input type="text" class="form-control" name="first_name"
+                                                    placeholder="First Name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-person"></i>
+                                                <input type="text" class="form-control" name="last_name"
+                                                    placeholder="Last Name" required>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +102,17 @@
                                             <div class="input-with-icon">
                                                 <i class="bi bi-envelope"></i>
                                                 <input type="email" class="form-control" name="email"
-                                                    placeholder="Email Address" required="">
+                                                    placeholder="Email Address" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-telephone"></i>
+                                                <input type="tel" class="form-control" name="phone"
+                                                    placeholder="Phone / WhatsApp Number" required>
                                             </div>
                                         </div>
                                     </div>

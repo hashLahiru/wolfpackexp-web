@@ -34,8 +34,44 @@ Route::get('/tour-details', function () {
     return view('web.tour-details');
 })->name('tour.details');
 
+Route::get('/mountain-trekking', function () {
+    return view('web.tours.mountain-trekking');
+})->name('tour.mountain-trekking');
+
+Route::get('/hiking-adventures', function () {
+    return view('web.tours.hiking-adventures');
+})->name('tour.hiking-adventures');
+
+Route::get('/pekoe-trail', function () {
+    return view('web.tours.pekoe-trail');
+})->name('tour.pekoe-trail');
+
+Route::get('/wildlife-exploration', function () {
+    return view('web.tours.wildlife-exploration');
+})->name('tour.wildlife-exploration');
+
+Route::get('/wildlife-safari', function () {
+    return view('web.tours.wildlife-safari');
+})->name('tour.wildlife-safari');
+
+Route::get('/water-adventures', function () {
+    return view('web.tours.water-adventures');
+})->name('tour.water-adventures');
+
+Route::get('/road-trip-adventures', function () {
+    return view('web.tours.road-trip-adventures');
+})->name('tour.road-trip-adventures');
+
+Route::get('/waterfall-hunting', function () {
+    return view('web.tours.waterfall-hunting');
+})->name('tour.waterfall-hunting');
+
+Route::get('/forest-bathing', function () {
+    return view('web.tours.forest-bathing');
+})->name('tour.forest-bathing');
+
 Route::get('/blog-details', function () {
-    return view('web.blog-detials');
+    return view('web.blog-details');
 })->name('blog.details');
 
 Route::get('/admin/dashboard', function () {

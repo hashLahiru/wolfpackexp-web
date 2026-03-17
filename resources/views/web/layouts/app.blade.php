@@ -29,13 +29,25 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Jul 01 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <style>
+        .team-member img {
+            height: 260px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .team-member {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-6px);
+        }
+    </style>
 </head>
 
 <body class="index-page">
@@ -45,8 +57,6 @@
             class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
             <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.webp" alt=""> -->
                 <h1 class="sitename">Tour</h1>
             </a>
 
@@ -56,7 +66,7 @@
                     <li><a href="{{ route('about') }}">About</a></li>
                     <li><a href="{{ route('tours') }}">Tours</a></li>
                     <li><a href="{{ route('booking') }}">Booking</a></li>
-                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                    {{-- <li><a href="{{ route('gallery') }}">Gallery</a></li> --}}
                     <li><a href="{{ route('blog') }}">Blog</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
@@ -73,24 +83,6 @@
     </main>
 
     <footer id="footer" class="footer position-relative dark-background">
-        <div class="footer-newsletter">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                        <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form"><input type="email" name="email"><input type="submit"
-                                    value="Subscribe"></div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -142,10 +134,6 @@
             <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights
                     Reserved</span></p>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a
                     href="https://bootstrapmade.com/tools/">DevTools</a>
             </div>
